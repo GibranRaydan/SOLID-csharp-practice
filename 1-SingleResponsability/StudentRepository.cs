@@ -24,7 +24,7 @@ namespace SingleResponsability
             return storage.GetAll();
         }
 
-        public void Export() 
+/*         public void Export() 
         {
             IEnumerable<Student> students = this.GetAll();
             string csv = String.Join(",", students.Select(x => x.ToString()).ToArray());
@@ -35,6 +35,6 @@ namespace SingleResponsability
                 sb.AppendLine($"{item.Id};{item.Fullname};{string.Join("|", item.Grades)}");
             }
             System.IO.File.WriteAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Students.csv"), sb.ToString(), Encoding.Unicode);
-        }
+        } */
     }
 }

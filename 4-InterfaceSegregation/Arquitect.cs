@@ -1,8 +1,8 @@
 namespace InterfaceSegregation
 {
-    public class Developer : IWorkTeamActivities, IDevelopActivities
+    public class Arquitect : IActivities
     {
-        public Developer()
+        public Arquitect()
         {
         }
 
@@ -26,5 +26,9 @@ namespace InterfaceSegregation
             Console.WriteLine("I'm developing the functionalities required");
         }
 
+        public void Test()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
